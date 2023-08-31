@@ -4,7 +4,8 @@
   "description": "My First API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node cool.js"
   },
   "repository": {
     "type": "git",
@@ -13,12 +14,17 @@
   "keywords": [
     "API",
     "first",
-    "node"
+    "node",
+    "cool",
+    "faces"
   ],
   "author": "Martin van Diest",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Tri3st/myapi/issues"
   },
-  "homepage": "https://github.com/Tri3st/myapi#readme"
+  "homepage": "https://github.com/Tri3st/myapi#readme",
+  "dependencies": {
+    "cool-ascii-faces": "^1.3.4"
+  }
 }
