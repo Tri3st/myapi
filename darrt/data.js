@@ -15,17 +15,40 @@
 
 // this service's message properties
 exports.props = [
-  'id',
-  'status',
-  'dateCreated',
-  'dateUpdated'
+  // tracking
+  'id','status','dateCreated','dateUpdated',
+  // company
+  'companyId', 'companyName', 'streetAddress', 'city', 'stateProvince', 
+  'postalCode', 'country', 'telephone', 'email',
+  // account
+  'accountId', 'division', 'spendingLimit', 'discountPercentage',
+  // activity
+  'activityId', 'activityType', 'dateScheduled', 'notes'
 ];
 
 // required properties
-exports.reqd = ['id',,'status'];
+exports.reqd = ['id','status'];
 
 // enumerated properties
 exports.enums = [
-  {status:['pending','active','suspended','closed']}
+  {
+    status:
+    ['pending','active','suspended','closed']
+  },
+  {
+    division:
+    ['DryGoods', 'Hardware', 'Software', 'Grocery', 'Pharmacy', 'Military']
+  },
+  {
+    activityType:
+    ['email', 'inperson', 'phone', 'letter']
+  }
+];
+
+exports.defs = [
+  {name: "spendingLimit", value: "10000"},
+  {name: "discountPercentage", value: "10"},
+  {name: "activityType", value: "email"},
+  {name: "status", value: "pending"}
 ];
 
