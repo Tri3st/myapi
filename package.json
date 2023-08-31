@@ -1,0 +1,24 @@
+{
+  "name": "myapi",
+  "version": "1.0.0",
+  "description": "My First API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tri3st/myapi.git"
+  },
+  "keywords": [
+    "API",
+    "first",
+    "node"
+  ],
+  "author": "Martin van Diest",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tri3st/myapi/issues"
+  },
+  "homepage": "https://github.com/Tri3st/myapi#readme"
+}
